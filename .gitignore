@@ -13,6 +13,9 @@ obj
 _ReSharper.*/
 /.vs
 
+# Jire Dev Docs
+devdocs/
+
 # binaries
 mods/*/*.dll
 mods/*/*.mdb

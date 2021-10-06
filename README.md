@@ -1,57 +1,17 @@
-# OpenRA
+<p align="center"><img src="https://www.dropbox.com/s/9c4ovllw064gtnz/JireLogoCondensed.png?raw=1" /></p>
 
-A Libre/Free Real Time Strategy game engine supporting early Westwood classics.
+Jire will be an open-source RTS that features substantial modifications to the real-time strategy game engine OpenRA ([http://www.openra.net](http://www.openra.net)). The primary goal of Jire is to further enable modern RTS development within OpenRA (ORA), by incorporating modern features such as non-grid based movement and cutting edge pathfinding. This will in turn enable the creation (or re-creation) of RTS games such as Age Of Empires II, StarCraft II, C&C 3 and more with less rework required. The secondary goal of Jire is to be a retro-inspired competitive multiplayer RTS, that feels modern and takes inspiration from the all-time greats such as Age of Empires II and StarCraft/StarCraft II.
 
-* Website: [http://www.openra.net](http://www.openra.net)
-* IRC: \#openra on irc.freenode.net
-* Repository: [https://github.com/OpenRA/OpenRA](https://github.com/OpenRA/OpenRA) ![Continuous Integration](https://github.com/OpenRA/OpenRA/workflows/Continuous%20Integration/badge.svg)
+Below are a list of core features that will be developed for this purpose.
 
-Please read the [FAQ](http://wiki.openra.net/FAQ) in our [Wiki](http://wiki.openra.net) and report problems at [http://bugs.openra.net](http://bugs.openra.net).
+- **(DONE)** Implement Non-grid based movement using the existing Aircraft movement as a basis
+- **(DONE)** Implement Non-grid based collision detection with other buildings and units
+- **(DONE)** Implement Non-grid based collision detection with terrain obstacles such as cliffs and rivers
+- **(IN PROGRESS)** Modify or re-implement the pathfinding module for non-grid based movement. An example of such a module can be found with [Age Of Empires II](https://www.gamasutra.com/view/feature/131720/coordinated_unit_movement.php) or StarCraft II.
+- Diamond based grid for building placement as it exists in Age Of Empires II.
 
-Join the [Forums](https://forum.openra.net/) for discussion.
+In addition, the below are nice-to-have features that will be developed once the core features are complete.
 
-## Play
-
-Distributed mods include a reimagining of
-
-* Command & Conquer: Red Alert
-* Command & Conquer: Tiberian Dawn
-* Dune 2000
-
-EA has not endorsed and does not support this product.
-
-Check our [Playing the Game](https://github.com/OpenRA/OpenRA/wiki/Playing-the-game) Guide to win multiplayer matches.
-
-## Contribute
-
-* Please read [INSTALL.md](https://github.com/OpenRA/OpenRA/blob/bleed/INSTALL.md) and [Compiling](http://wiki.openra.net/Compiling) on how to set up an OpenRA development environment.
-* See [Hacking](http://wiki.openra.net/Hacking) for a (now very outdated) overview of the engine.
-* Read and follow our [Code of Conduct](https://github.com/OpenRA/OpenRA/blob/bleed/CODE_OF_CONDUCT.md).
-* To get your patches merged, please adhere to the [Contributing](https://github.com/OpenRA/OpenRA/blob/bleed/CONTRIBUTING.md) guidelines.
-
-## Mapping
-
-* We offer a [Mapping](http://wiki.openra.net/Mapping) Tutorial as you can change gameplay drastically with custom rules.
-* For scripted mission have a look at the [Lua API](http://wiki.openra.net/Lua-API).
-* If you want to share your maps with the community, upload them at the [OpenRA Resource Center](http://resource.openra.net).
-
-## Modding
-
-* Download a copy of the [OpenRA Mod SDK](https://github.com/OpenRA/OpenRAModSDK/) to start your own mod.
-* Check the [Modding Guide](http://wiki.openra.net/Modding-Guide) to create your own classic RTS.
-* There exists an auto-generated [Trait documentation](https://docs.openra.net/en/latest/release/traits/) to get started with yaml files.
-* Some hints on how to create new OpenRA compatible [Pixelart](http://wiki.openra.net/Pixelart).
-* Upload total conversions at [our ModDB profile](http://www.moddb.com/games/openra/mods).
-
-## Support
-
-* Sponsor a [mirror server](https://github.com/OpenRA/OpenRAWeb/tree/master/content/packages) if you have some bandwidth to spare.
-* You can immediately set up a [Dedicated](http://wiki.openra.net/Dedicated) Game Server.
-
-## License
-Copyright 2007-2021 The OpenRA Developers (see [AUTHORS](https://github.com/OpenRA/OpenRA/blob/bleed/AUTHORS))
-This file is part of OpenRA, which is free software. It is made
-available to you under the terms of the GNU General Public License
-as published by the Free Software Foundation, either version 3 of
-the License, or (at your option) any later version. For more
-information, see [COPYING](https://github.com/OpenRA/OpenRA/blob/bleed/COPYING).
+- A game balance framework and/or theory that aims to ensure a baseline level of balance among factions can easily be obtained, that avoids as much painstaking trial and error as possible.
+- Client/server architecture, with a competitive matchmaking system that uses Elo to group players into leagues (similar to StarCraft II).
+- A custom map/game module that enables people to create their own spin-off mini-games within the engine, similar to that seen in StarCraft & WarCraft custom maps.

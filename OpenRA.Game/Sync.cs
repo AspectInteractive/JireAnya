@@ -134,21 +134,23 @@ namespace OpenRA
 			return 0;
 		}
 
-		public static int HashTarget(Target t)
+		public static int HashTarget(Target target)
 		{
-			switch (t.Type)
+			switch (target.Type)
 			{
 				case TargetType.Actor:
-					return (int)(t.Actor.ActorID << 16) * 0x567;
+					return (int)(target.Actor.ActorID << 16) * 0x567;
 
 				case TargetType.FrozenActor:
-					if (t.FrozenActor.Actor == null)
+					if (target.FrozenActor.Actor == null)
 						return 0;
 
-					return (int)(t.FrozenActor.Actor.ActorID << 16) * 0x567;
+					return (int)(target.FrozenActor.Actor.ActorID << 16) * 0x567;
 
-				case TargetType.Terrain:
-					return HashUsingHashCode(t.CenterPosition);
+				case TargetType.TerrainCell:
+				case TargetType.TerrainCellPos:
+				case TargetType.TerrainPos:
+					return HashUsingHashCode(target.CenterPosition);
 
 				default:
 				case TargetType.Invalid:

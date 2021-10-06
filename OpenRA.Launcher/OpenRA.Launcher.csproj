@@ -21,6 +21,10 @@
     <StartAction>Project</StartAction>
     <StartArguments>Engine.EngineDir=".." Game.Mod=ts</StartArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
     <ProjectReference Include="..\OpenRA.Game\OpenRA.Game.csproj" />
