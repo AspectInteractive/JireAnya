@@ -379,11 +379,5 @@ namespace OpenRA.Network
 
 			Recorder?.Dispose();
 		}
-
-		void IDisposable.Dispose()
-		{
-			Dispose(true);
-			GC.SuppressFinalize(this);
-		}
 	}
 }
