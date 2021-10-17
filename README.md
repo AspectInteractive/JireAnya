@@ -1,4 +1,5 @@
 # IMPORTANT: This branch is discontinued
+## For the current version of Jire, please refer to the Jire repository instead (https://github.com/AspectInteractive/Jire)
 
 Due to difficulties in getting this to work as intended, the Anya pathfinder has been discontinued. This code is a carbon copy of the C++ code written and owned by (T. Uras and S. Koenig,  2015. An Empirical Comparison of Any-Angle Path-Planning Algorithms. In: Proceedings of the 8th Annual Symposium on Combinatorial Search.). The original code is available at: http://idm-lab.org/anyangle (direct link is http://idm-lab.org/code/anyangle.tar). Main files used are AnyAngleAlgorithm.cpp, AnyAngleAlgorithm.h, ANYA.h, ANYA.cpp. You will also need to refer to the paper "Optimal Any-Angle Pathfinding In Practice" that can be found here: http://www.grastien.net/ban/articles/hgoa-jair16.pdf . 
 
